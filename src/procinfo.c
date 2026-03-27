@@ -53,7 +53,7 @@ int main(int c, char** v){
     snprintf(path, sizeof(path), "/proc/%s/status", v[1]);
     f_status = fopen(path, "r");    /* read (path) */
     if (!f_status) {    /* failed to open f_status */
-        DIE_MSG("Err. Check PID");
+        DIE_MSG("Err. Check PID or access");
     }
 
 
